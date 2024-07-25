@@ -1,0 +1,22 @@
+/*
+RESET
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+GENERAL
+*/
+main{
+    width: 1000px;
+    background-color: lightcoral;
+    margin: 0 auto;
+}
+#Member-info-container > *{
+    font-weight: bolder;
+    font-size: 1.7rem;
+    color: aliceblue;
+    padding: 20px;
+}
