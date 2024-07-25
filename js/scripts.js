@@ -1,5 +1,4 @@
-console.log('ciao mondo');
-
+const container = document.getElementById('Member-info-container');
 //creo un array di oggetti per inserire i dati del Team
 const OurTeam = 
 [
@@ -34,7 +33,10 @@ const OurTeam =
         image : 'barbara-ramos-graphic-designer.jpg'
     }
 ];
-//stampo in console i mebri del team con nome/ruolo/immagine
+//stampo in console i membri del team con nome/ruolo/immagine
 OurTeam.forEach(function(membri) {
     console.log("Name: " + membri.name + ", Role: " + membri.role + ", Image: " + membri.image);
+    memberInfo = document.createElement('p');
+    memberInfo.textContent = "Name: " + membri.name + ", Role: " + membri.role + ", Image: " + membri.image;
+    container.appendChild(memberInfo);
 });
